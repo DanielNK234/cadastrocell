@@ -1,0 +1,37 @@
+  
+  <div class="body"> 
+    <div class='container'>
+
+      <div class='card'>
+        <h1> Cadastrar </h1>
+        
+        <div id='msgError'></div>
+        <div id='msgSuccess'></div>
+        
+                <div class="label-float">
+                  <input type="text"  [(ngModel)]="usuario" placeholder=" " required>
+                  <label id="labelNome" for="nome">Nome</label>
+                </div>
+    
+                <div class="label-float">
+                  <input type="text" [(ngModel)]="telefone" placeholder=" " required>
+                  <label id="labelUsuario" for="usuario">Telefone</label>
+                </div>
+                <div class='justify-center'>
+                  <button (click)="addCadastro()">Cadastrar</button>
+                </div>
+  </div>
+    <div class="lista"> 
+      <p class="titleLista">lista de usuarios</p>
+      <!--<div *ngFor-->
+        <ul>
+          <li *ngFor="let user of users let i = index"> {{i}}.{{ user.name }}</li>
+        </ul>
+        <ul>
+          <li *ngFor="let user of users let i = index"> {{i}}.{{ user.tel }}</li>
+        </ul>
+        
+      </div>
+      </div>
+
+  </div>
